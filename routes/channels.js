@@ -1,5 +1,5 @@
-const express = require('express');
-const router = express.Router();
+import { Router } from 'express';
+const router = Router();
 
 const users = [];
 
@@ -133,4 +133,4 @@ router
 		}
 	});
 
-module.exports = router;
+export default router;
