@@ -35,7 +35,7 @@ router.post('/join', async (req, res) => {
 	} else {
 		await conn.query(
 			`INSERT INTO users(email, name, password, contact)
-				VALUES( '${email}', '${name}', '${password}', '${contact}' )`
+			VALUES( '${email}', '${name}', '${password}', '${contact}' )`
 		);
 		res.status(200).json({
 			message: `${email}님 환영합니다.`,
